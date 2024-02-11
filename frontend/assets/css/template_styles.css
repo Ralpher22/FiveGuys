@@ -1,0 +1,115 @@
+
+/* Import the root styles.css file */
+@import url(./root_styles.css);
+
+/* Set the background color of the body to the primary xlight color */
+body {
+    background-color: var(--primary-xlight);
+}
+
+/* Style the template button with a white background, primary color text, and a primary color border */
+.btn-template-btn {
+    background-color: var(--white);
+    color: var(--primary) !important;
+    border: 1px solid var(--primary) !important;
+}
+
+/* Change the border color of the template button when hovered */
+.btn-template-btn:hover {
+    border: 1px solid var(--primary);
+}
+
+/* Set the border-radius of input, textarea, and select elements to 0px */
+input,textarea,select {
+    border-radius: 0px !important;
+}
+
+/* Style the focused state of input, textarea, and select elements with a primary color border and no box-shadow */
+input:focus,:focus,select:focus {
+    box-shadow: none !important;
+    border: 1px solid var(--primary) !important;
+    border-radius: 0px !important;
+}
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--primary);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.site-logo {
+    width: 200px;
+    height: 80px;
+}
+
+.nav-items {
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    color: var(--primary-dark);
+}
+
+.account-action {
+    margin-top: 1.5rem;
+}
+.top-search-items{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem;
+    background-color: var(--white);
+    width: 60%;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    border: 1px solid var(--primary-xlight);
+}
+.top-search-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--primary-xlight);
+
+}.search-input input,.search-select select,
+.search-input input:focus,
+.search-select select:focus{
+    border: none;
+}
+.search-input{
+    width: 70%;
+}
+.select-select select{
+    border-right: 1px solid var(--primary-xlight) !important;
+}
+footer{
+  
+    padding-right: 0;
+    border-radius: 10px;
+    border-top-left-radius: 40px ;
+}
+.site-footer{
+background-color: var(--white);
+padding: 1rem;
+position: fixed;
+bottom: 0;
+width: 100%;
+
+}
+.site-footer h2{
+    margin-top: 1rem;
+}
+.current-page{
+    border-bottom:2px solid var(--primary) ;
+    padding-bottom:5px ;
+}
+li.nav-link a:hover, .footer-link a:hover{
+    border-bottom:2px solid var(--primary) ;
+    padding-bottom:5px ;
+
+}
