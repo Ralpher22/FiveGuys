@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/root_styles.css">
     <link rel="stylesheet" href="./assets/css/template_styles.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="/frontend/assets/js/main.js">
     <header>
         <!-- top search bar -->
         <div class="top-ssection">
@@ -58,21 +59,26 @@
                 </li>
             </ul>
             <div class="account-action">
-                <a href="#" class="btn btn-primary">Login</a>
+                <a href="login.html" class="btn btn-primary">Login</a>
                 <a href="#" class="btn btn-template-btn">Signup</a>
             </div>
         </nav>
     </header>
    
-   
     <main>
-     <div class="container border p-4 bg-white mt-4">
-        <h1>this is the home page</h1>
-        <span class="fas fa-user"></span>
-     </div>
-
-    </main>
-    <!--footer-->
+        <div class="container border p-4 bg-white mt-4 flex flex-row">
+          <div class="text-section flex-1 basis-2/3 p-4">
+            <h1><span>W</span>elcome to <span>Five</span>Guys</h1>
+            <p>Escape the ordinary and embark on a culinary adventure at <span>Five</span>Guys.</p>
+            
+          <div class="image-container basis-1/3 p-4">
+            <img id="main-image" src="/frontend/assets/images/logos/download (1).jpeg" alt="Main image">
+          </div>
+        </div>
+      </main>
+      
+      
+    
     
     <footer class="site-footer">
         <div class="row">
@@ -166,9 +172,11 @@
     <!-- <script src="./assets/libs/bootstrap/js/bootstrap.min.js"></script> -->
 
     <script>
-        $(function(){
+       // $(function(){
             // alert("JQuery is working. Lets Get Started.");
-        });
+        //});
+       
+
     </script>
 </body>
 </html>
