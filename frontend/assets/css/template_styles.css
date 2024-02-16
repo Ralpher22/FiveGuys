@@ -38,7 +38,10 @@ input:focus,:focus,select:focus {
     padding-left: 1rem;
     padding-right: 1rem;
 }
-
+/*header{
+    position: absolute;
+}
+*/
 .site-logo {
     width: 200px;
     height: 80px;
@@ -96,7 +99,7 @@ footer{
 .site-footer{
 background-color: var(--white);
 padding: 1rem;
-position: fixed;
+position: relative;
 bottom: 0;
 width: 100%;
 
