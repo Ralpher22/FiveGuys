@@ -45,7 +45,7 @@
                         </a>
                       
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <li><a class="dropdown-item" href="#">Traditional</a></li>
+                          <li><a class="dropdown-item" href="#traditonal">Traditional</a></li>
                           <li><a class="dropdown-item" href="#">international</a></li>
                           <li><a class="dropdown-item" href="#">Explore All</a></li>
                         </ul>
@@ -76,12 +76,33 @@
           </div>
         </div>
       </main>
-      <!--<a href="about.html"></a>-->
-      <div class="container border p-4 bg-white mt-4 flex flex-row">
-        
-            <p>This the about content</p>
-        
-           
+      
+    <div id="about">
+        <head id="scroll-header">
+            <h1>Explore Delicious Traditional Meals</h1>
+        </head>
+        <script>
+            const header = document.getElementById("scroll-header");
+            header.addEventListener("click", () => {
+                window.scrollTo({
+                    top: document.body.scrollHeight,
+                    behavior: "smooth"
+                });
+            });
+        </script>
+        <main>
+            <h2>Menu with Ratings and Prices</h2>
+            <section class="meals">
+                <article class="meal">
+                    <img src="meal1.jpg" alt="Picture of meal 1"> <h3>Name of traditional meal 1</h3>
+                    <p>A brief description of the dish and its cultural significance.</p>
+                    <div class="info">
+                        <span class="price">Price: $XX.XX</span>
+                        <span class="rating">Rating: <span class="stars">★★★★★</span></span>
+                    </div>
+                </article>
+                </section>
+        </main>
       </div>
     
     
