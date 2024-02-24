@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="/frontend/assets/js/main.js">
     <header>
+        <header>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon"></div>
+            </div>
         <!-- top search bar -->
         <div class="top-ssection">
             <form action="#" class="top-search-form">
@@ -40,17 +44,16 @@
                 </li>
                 <li class="nav-link">
                     <div class="dropdown">
-                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                          Delicacies
-                        </a>
-                      
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <li><a class="dropdown-item" href="#traditonal">Traditional</a></li>
-                          <li><a class="dropdown-item" href="#">international</a></li>
-                          <li><a class="dropdown-item" href="#">Explore All</a></li>
-                        </ul>
-                      </div>
-                </li>
+                      <a class="dropdown-toggle" href="#delicacies-section" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Delicacies
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#traditonal">Traditional</a></li>
+                        <li><a class="dropdown-item" href="#international">International</a></li>
+                        <li><a class="dropdown-item" href="#explore-all">Explore All</a></li>
+                      </ul>
+                    </div>
+                  </li>
                 <li class="nav-link">
                     <a href="about.html" class="nav-item active">About</a>
                 </li>
@@ -64,46 +67,23 @@
             </div>
         </nav>
     </header>
-   
-    <main>
-        <div class="container border p-4 bg-white mt-4 flex flex-row">
-          <div class="text-section flex-1 basis-2/3 p-4">
-            <h1><span>W</span>elcome to <span>Five</span>Guys</h1>
-            <p>Escape the ordinary and embark on a culinary adventure at <span>Five</span>Guys.</p>
-            
-          <div class="image-container basis-1/3 p-4">
-            <img id="main-image" src="/frontend/assets/images/logos/download (1).jpeg" alt="Main image">
-          </div>
-        </div>
-      </main>
-      
-    <div id="about">
-        <head id="scroll-header">
-            <h1>Explore Delicious Traditional Meals</h1>
-        </head>
-        <script>
-            const header = document.getElementById("scroll-header");
-            header.addEventListener("click", () => {
-                window.scrollTo({
-                    top: document.body.scrollHeight,
-                    behavior: "smooth"
-                });
-            });
-        </script>
+
         <main>
-            <h2>Menu with Ratings and Prices</h2>
-            <section class="meals">
-                <article class="meal">
-                    <img src="meal1.jpg" alt="Picture of meal 1"> <h3>Name of traditional meal 1</h3>
-                    <p>A brief description of the dish and its cultural significance.</p>
-                    <div class="info">
-                        <span class="price">Price: $XX.XX</span>
-                        <span class="rating">Rating: <span class="stars">★★★★★</span></span>
-                    </div>
-                </article>
-                </section>
-        </main>
+           
+    <div class="container">
+      <div class="text-section">
+        <h1><strong><span>W</span>elcome to <span>F</span>ive Guys</strong></h1>
+        <p>Escape the ordinary and embark on a culinary adventure at Five Guys.</p>
       </div>
+      <div class="image-container">
+        <img src="/frontend/assets/images/logos/download (1).jpeg" alt="Main image">
+      </div>
+    </div> 
+        
+    <div id="delicacies-section" class="text-section">
+        <p>Delicacies</p>
+    </div>
+    </main>
     
     
     <footer class="site-footer">
@@ -202,7 +182,9 @@
             // alert("JQuery is working. Lets Get Started.");
         //});
        
-
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+    document.querySelector('.nav-items').classList.toggle('active');
+});
     </script>
 </body>
 </html>
